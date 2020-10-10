@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+
+body{
+    font-family: 'Oswald', sans-serif;
+    background-color: black;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    color: #ffec42;
+}
+
+.hola {
+    width: 600px;
+    margin-top: 15px;
+    list-style: none;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.hola li {
+    border: 1px solid #ffec42;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    padding: 5px;
+}
+
+.hola li a{
+    color: #ffec42;
+    text-decoration: none;
+}
+
+main {
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    color: white;  
+}
+
+section {
+    border: 1px solid black;
+}
+
+aside{
+    background-color: #282828;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer{
+    border: 1px solid black;
+}
+
+a.nav-link {
+    color: white;
+}
+
+button.btn.btn-primary {
+    background-color: blueviolet;
+    border: blueviolet;
+}
+
+img.profile-pic{
+    width: 200px;
+    height: auto;
+    margin: 20px;
+    border-radius: 2px;
+}
+
+button.inicio{
+    background-color: black;
+    border: 1px solid #ffec42;
+    width: 150px;
+    height: 40px;
+}
+
+button.inicio a{
+    color: #ffec42;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.list-group-item.active{
+    border: blueviolet;
+    background-color: blueviolet;
+}
+
+footer{
+    display: flex;
+    justify-content: flex-end;
+}
+
+main.login{
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+    text-transform: uppercase;
+}
+
+footer.ciudad{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+}
+
+.bienvenida{
+    height: 285px;
+    width: 220px;
+    padding-top: 20px;
+    padding-left: 20px;
+    margin-top: 80px;
+    background-color: blueviolet;
+}
+
+h2{
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.registro{
+    width: 303px;
+    height: 449px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #282828;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form.credenciales{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button.btn.btn-primary.acceder{
+    border-radius: 0px;
+    text-transform: uppercase;
+    border: 2px solid #ffec42;
+    background-color: #282828;
+    width: 150px;
+}
+
+button.btn.btn-primary.acceder a{
+    color: white;
+    text-decoration: none;
+}
+
+.form-control.input-pin{
+    background-color: blueviolet;
+    border-radius: 0px;
+    border: blueviolet;
+}
+
+.yellow{
+    background-color: #ffec42;
+    width: 50px;
+    height: 285px;
+    margin-top: 80px;
+}

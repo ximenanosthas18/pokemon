@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>ATM</title>
+</head>
+<body>
+    <div class="container">
+        <br>
+        <nav class="d-flex justify-content-around">
+            <h1>POKEMON BANK</h1>
+            <ul class="d-flex justify-content-between hola">
+                <li><a href="./actividad.html">Actividad</a></li>
+                <li><a href="./transacciones.html">Transacciones</a></li>
+                <li><a href="./login.html">Cerrar Sesión</a></li>
+            </ul>
+        </nav>
+        <br>
+        <br>
+        <main>
+            <aside>
+                <img src="./userImage.webp" alt="" class="profile-pic">
+                <p>Nombre</p>
+                <p>Edad</p>
+                <p>DUI</p>
+                <p>Nombre del banco</p>
+                <p>Numero de cuenta</p>
+            </aside>
+    
+            <section>
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <a class="nav-link active" id="retiro-tab" data-toggle="tab" href="#retiro" role="tab" aria-controls="retiro" aria-selected="true">Retiro</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <a class="nav-link" id="deposito-tab" data-toggle="tab" href="#deposito" role="tab" aria-controls="deposito" aria-selected="false">Depósito</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <a class="nav-link" id="pago-tab" data-toggle="tab" href="#pago" role="tab" aria-controls="pago" aria-selected="false">Pago de Servicios</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="saldo-tab" data-toggle="tab" href="#saldo" role="tab" aria-controls="saldo" aria-selected="false">Consulta de Saldo</a>
+                    </li>
+                  </ul>
+                  <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="retiro" role="tabpanel" aria-labelledby="retiro-tab">
+                        <br>
+                        <form>
+                            <div class="form-group">
+                              <label for="cantidad-retiro">Ingrese la cantidad que desea retirar en múltiplos de 5</label>
+                              <input type="text" class="form-control" id="cantidad-retiro" placeholder="E.g. 20, 75, 100, 250">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Retirar Cantidad</button>
+                        </form>
+                        <br>
+                    </div>
+                    <div class="tab-pane fade" id="deposito" role="tabpanel" aria-labelledby="deposito-tab">
+                        <br>
+                        <form>
+                            <div class="form-group">
+                              <label for="cantidad-deposito">Ingrese la cantidad a depositar</label>
+                              <input type="text" class="form-control" id="cantidad-deposito">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Depositar</button>
+                        </form>
+                        <br>
+                    </div>
+                    <div class="tab-pane fade" id="pago" role="tabpanel" aria-labelledby="pago-tab">
+                        <br>
+                        <form>
+                            <div class="form-group">
+                                <label for="select-servicio">Servicio</label>
+                                <select class="form-control" id="select-servicio">
+                                  <option>Agua</option>
+                                  <option>Luz</option>
+                                  <option>Cable</option>
+                                  <option>Internet</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="select-compania">Companía</label>
+                                <select class="form-control" id="select-compania">
+                                  <option>Anda</option>
+                                  <option>2</option>
+                                  <option>3</option>
+                                  <option>4</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                              <label for="numero-referencia">Número de referencia</label>
+                              <input type="text" class="form-control" id="numero-referencia">
+                            </div>
+                            <div class="form-group">
+                                <label for="cantidad-pago">Ingrese la cantidad a pagar</label>
+                                <input type="text" class="form-control" id="cantidad-pago">
+                              </div>
+                            <button type="submit" class="btn btn-primary">Confirmar</button>
+                        </form>
+                        <br>
+                    </div>
+                    <div class="tab-pane fade" id="saldo" role="tabpanel" aria-labelledby="saldo-tab">
+                        <br>
+                        <p>Saldo actual: $<span>0.00</span></p>
+                    </div>
+                  </div>
+            </section>    
+        </main>
+    </div>
+    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
