@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>ATM</title>
 </head>
-<body>
+<body id="inicio">
     <div class="container">
         <br>
         <nav class="d-flex justify-content-around">
@@ -23,11 +23,10 @@
         <main>
             <aside>
                 <img src="./userImage.webp" alt="" class="profile-pic">
-                <p>Nombre</p>
-                <p>Edad</p>
-                <p>DUI</p>
-                <p>Nombre del banco</p>
-                <p>Numero de cuenta</p>
+                <p>Ash Ketchum</p>
+                <p>ash@gmail.com</p>
+                <p>00407745-9</p>
+                <p>0987654321</p>
             </aside>
     
             <section>
@@ -48,18 +47,20 @@
                   <div class="tab-content" id="myTabContent">
                     <div class="tab-pane fade show active" id="retiro" role="tabpanel" aria-labelledby="retiro-tab">
                         <br>
-                        <form>
+                        <form id="retiros">
                             <div class="form-group">
-                              <label for="cantidad-retiro">Ingrese la cantidad que desea retirar en múltiplos de 5</label>
-                              <input type="text" class="form-control" id="cantidad-retiro" placeholder="E.g. 20, 75, 100, 250">
+                              <label for="cantidad-retiro">Ingrese la cantidad que desea retirar</label>
+                              <input type="text" class="form-control" id="cantidad-retiro">
                             </div>
                             <button type="submit" class="btn btn-primary">Retirar Cantidad</button>
                         </form>
                         <br>
+                        <div id="mensaje"></div>
+                        <div></div>
                     </div>
-                    <div class="tab-pane fade" id="deposito" role="tabpanel" aria-labelledby="deposito-tab">
+                    <div class="tab-pane fade" id="deposito"role="tabpanel" aria-labelledby="deposito-tab">
                         <br>
-                        <form>
+                        <form id="depositos">
                             <div class="form-group">
                               <label for="cantidad-deposito">Ingrese la cantidad a depositar</label>
                               <input type="text" class="form-control" id="cantidad-deposito">
@@ -70,28 +71,15 @@
                     </div>
                     <div class="tab-pane fade" id="pago" role="tabpanel" aria-labelledby="pago-tab">
                         <br>
-                        <form>
+                        <form id="pagos">
                             <div class="form-group">
                                 <label for="select-servicio">Servicio</label>
-                                <select class="form-control" id="select-servicio">
+                                <select class="form-control" id="select-servicio" name="select-servicio">
                                   <option>Agua</option>
                                   <option>Luz</option>
                                   <option>Cable</option>
                                   <option>Internet</option>
                                 </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="select-compania">Companía</label>
-                                <select class="form-control" id="select-compania">
-                                  <option>Anda</option>
-                                  <option>2</option>
-                                  <option>3</option>
-                                  <option>4</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                              <label for="numero-referencia">Número de referencia</label>
-                              <input type="text" class="form-control" id="numero-referencia">
                             </div>
                             <div class="form-group">
                                 <label for="cantidad-pago">Ingrese la cantidad a pagar</label>
@@ -103,7 +91,7 @@
                     </div>
                     <div class="tab-pane fade" id="saldo" role="tabpanel" aria-labelledby="saldo-tab">
                         <br>
-                        <p>Saldo actual: $<span>0.00</span></p>
+                        <p>Saldo actual: $<span id="span-saldo">0.00</span></p>
                     </div>
                   </div>
             </section>    
@@ -114,5 +102,10 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
+    <script src="./usuario/userscript.js"></script>
+    <script src="./usuario/transacciones.js"></script>
 </body>
 </html>
