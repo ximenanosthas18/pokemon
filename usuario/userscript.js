@@ -75,12 +75,5 @@ var cuenta = {
            localStorage["transacciones"] = JSON.stringify(data_existente);
            //console.log(localStorage.getItem("transacciones"));
         }
-    },
-
-    imprimirTransaccion: function(){
-        const doc = new jsPDF();
-    
-        doc.text("Ejemplo #1!", 10, 10);
-        doc.save("ATM-jspdf.pdf");
     }
 };
